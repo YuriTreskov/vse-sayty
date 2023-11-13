@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'Montserrat-vs'; 
+	src: url(/src/fonts/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background: radial-gradient(at center, #020E15, #010101);
+    padding: 10vh 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.textContainer{
+    height: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    clip-path: circle(60%);
+    z-index: 33;
+}
+.header{
+    color: #eafeff;
+    font-family:Montserrat-vs;
+    font-size: 6vw;
+    margin-top: 10vh;
+    z-index: 10;
+    max-width: 90%;
+    text-align: center;
+    z-index: 33;
+    
+}
+.header span{
+    vertical-align: bottom;
+    background-image: linear-gradient(to right, pink, skyblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; /* чтобы градиент применялся по ширине текста */
+}
+.header1{
+    color: #eafeff;
+    font-family:Montserrat-vs;
+    font-size: 2vw;
+    margin-top: 10vh;
+    z-index: 10;
+    max-width: 80%;
+    text-align: center;
+    z-index: 33;
+    opacity: .7;
+    text-shadow: #273141 1px 0 10px;
+}
+
+.fon{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: auto;
+    width: 70%;
+    z-index: 1;
+    opacity: 1;
+
+}
+.gradient{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( 70deg,rgba(0,0,0,0),40%, rgba(0,0,0,1));
+    z-index: 22;
+}
+
+@media (max-width: 768px){
+    .container{
+        height: auto;
+    }
+    .fon{
+        width: 200%;
+    }
+    .textContainer{
+        width: 100%;
+    }
+    .header{
+        font-size: 7vw;
+        margin-top: 20vh;
+        
+    }
+    .header1{
+        font-size: 6vw;
+        margin-top: 10vh;
+        height: 30vh;
+    }
+}

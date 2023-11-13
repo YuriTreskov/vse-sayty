@@ -1,0 +1,176 @@
+.Page1OnValid{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1111;
+    top:0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.Page1OnValidImg{
+    height: 20vh;
+    opacity: .8;
+}
+.Button{
+
+    height: 13vh;
+    width: 30vw;
+    position: absolute;
+    background: none;
+    z-index: 22;
+    bottom:9vh;
+    right: 10vw;
+    display: flex;
+    color: white;
+    font-size: 5vh;
+    text-shadow: rgb(20, 20, 20) 1px 0 10px;
+    font-weight: 400;
+    font-family: Montserrat ;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b9d6ff;
+    /* border-radius: 40px; */
+    overflow: hidden;
+    opacity: .7;
+    transition: all 0.3s ease;
+}
+.Button:hover{
+    font-size: 5.1vh;
+    opacity: .9;
+    transform: scale(101%);
+    cursor: pointer;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 2px 2px rgb(98, 200, 255);
+}
+
+.ModalContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 222;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+.ModalWind{
+    height: 390px;
+    width: 550px;
+    background-color: white;
+    opacity: 1;
+}
+.ModalHeader{
+    width: 100%;
+    font-size: 1.6vw;
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 35px;
+    font-weight: 600;
+}
+.ModalHeader1{
+    width: 100%;
+    font-size: 1vw;
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 20px;
+}
+.ModalForm{
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+.ModalFormError{
+    color: red;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+.ModalInputName{
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    text-align: center;
+}
+.ModalInputPhone{
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+}
+::-webkit-input-placeholder {color:#1d0e0c;}
+::-moz-placeholder          {color:#1d0e0c;}/* Firefox 19+ */
+:-moz-placeholder           {color:#1d0e0c;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#1d0e0c;}
+::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+.ModalFormButton{
+    height: 50px;
+    width: 82%;
+    background: linear-gradient(rgb(146, 219, 250), rgb(1, 33, 74));
+    opacity: .9;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.ModalFormButton:hover{
+    background: linear-gradient(rgb(146, 219, 250), rgb(22, 65, 121));
+    opacity: 1;
+    transform: scale(101%);
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .Button{
+        height: 9vh;
+        width: 70%;
+        bottom:7%;
+        left: 15%;
+        font-size: 3vh;
+    }
+    .Button:hover{
+        font-size: 3.05vh;
+    }
+    .ModalWind{
+        height: 42vh;
+        width: 80vw;
+    }
+    .ModalHeader{
+        font-size: 3.7vw;
+        margin-top: 4vh;
+    }
+    .ModalHeader1{
+        font-size: 2.5vw;
+        margin-top: 2vh;
+    }
+    .ModalInputName{
+        height: 4vh;
+        margin-top: 4vh;
+        font-size: 12px;
+    }
+    .ModalInputPhone{
+        height: 4vh;
+        margin-top: 3vh;
+        font-size: 12px;
+    }
+    .ModalFormButton{
+        height: 5vh;
+        width: 82%;
+        margin-top: 3vh;
+        font-size: 12px;
+
+    }
+}
